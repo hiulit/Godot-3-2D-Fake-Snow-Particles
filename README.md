@@ -10,24 +10,26 @@ A script to simulate snow particles ❄️.
 
 ### Variables
 
-- [emitting](#emitting)
-- [amount](#amount)
-- [visibility_rect](#visibility_rect)
-- [colors](#colors)
-- [min_velocity](#min_velocity)
-- [max_velocity](#max_velocity)
-- [timer_wait_time](#timer_wait_time)
-- [preprocess](#preprocess)
+|Name|Type|Default|
+|:-|:-|:-|
+|[emitting](#emitting)|`bool`|`false`|
+|[amount](#amount)|`int`|`200`|
+|[visibility_rect](#visibility_rect)|`Rect2`|`Rect2(0.0, -100.0, 320.0, 180.0)`|
+|[colors](#colors)|`PoolColorArray`|`[Color(1.0, 1.0, 1.0, 1.0)]`|
+|[min_velocity](#min_velocity)|`float`|`10.0`|
+|[max_velocity](#max_velocity)|`float`|`50.0`|
+|[timer_wait_time](#timer_wait_time)|`float`|`5.0`|
+|[preprocess](#preprocess)|`bool`|`false`|
 
 ## Variables
 
 ### emitting
 
-If `true`, particles are being emitted.
-
 ```gdscript
 export (bool) var emitting = false setget _set_emitting
 ```
+
+If `true`, particles are being emitted.
 
 |Name|Type|Default|Setter|
 |:-|:-|:-|:-|
@@ -35,11 +37,11 @@ export (bool) var emitting = false setget _set_emitting
 
 ### amount
 
-The number of particles.
-
 ```gdscript
 export (int) var amount = 200 setget _set_amount
 ```
+
+The number of particles.
 
 |Name|Type|Default|Setter|
 |:-|:-|:-|:-|
@@ -47,11 +49,11 @@ export (int) var amount = 200 setget _set_amount
 
 ### visibility_rect
 
-Controls the visibility of the particles.
-
 ```gdscript
 export (Rect2) var visibility_rect = Rect2(0.0, -100.0, 320.0, 180.0) setget _set_visibility_rect
 ```
+
+Controls the visibility of the particles.
 
 |Name|Type|Default|Setter|
 |:-|:-|:-|:-|
@@ -59,13 +61,13 @@ export (Rect2) var visibility_rect = Rect2(0.0, -100.0, 320.0, 180.0) setget _se
 
 ### colors
 
-The color/s of the particles.
-
-If there is more than 1 color, these colors will be applied randomly  on the "background" particles along with the main color.
-
 ```gdscript
 export (PoolColorArray) var colors = [Color(1.0, 1.0, 1.0, 1.0)] setget _set_colors
 ```
+
+The color/s of the particles.
+
+ If there is more than 1 color, these colors will be applied randomly \ on the "background" particles along with the main color.
 
 |Name|Type|Default|Setter|
 |:-|:-|:-|:-|
@@ -73,11 +75,11 @@ export (PoolColorArray) var colors = [Color(1.0, 1.0, 1.0, 1.0)] setget _set_col
 
 ### min_velocity
 
-The possible minimum velocity of the particles.
-
 ```gdscript
 export (float) var min_velocity = 10.0 setget _set_min_velocity
 ```
+
+The possible minimum velocity of the particles.
 
 |Name|Type|Default|Setter|
 |:-|:-|:-|:-|
@@ -85,11 +87,11 @@ export (float) var min_velocity = 10.0 setget _set_min_velocity
 
 ### max_velocity
 
-The possible maximum velocity of the particles.
-
 ```gdscript
 export (float) var max_velocity = 50.0 setget _set_max_velocity
 ```
+
+The possible maximum velocity of the particles.
 
 |Name|Type|Default|Setter|
 |:-|:-|:-|:-|
@@ -97,11 +99,11 @@ export (float) var max_velocity = 50.0 setget _set_max_velocity
 
 ### timer_wait_time
 
-The amount of time (in seconds) until the next cycle of particles is emitted.
-
 ```gdscript
 export (float) var timer_wait_time = 5.0 setget _set_timer_wait_time
 ```
+
+The amount of time (in seconds) until the next cycle of particles is emitted.
 
 |Name|Type|Default|Setter|
 |:-|:-|:-|:-|
@@ -109,11 +111,11 @@ export (float) var timer_wait_time = 5.0 setget _set_timer_wait_time
 
 ### preprocess
 
-If `true`, [visibility_rect](#visibility_rect) will be full of particles when loading the scene.
-
 ```gdscript
 export (bool) var preprocess = false
 ```
+
+If `true`, [visibility_rect](#visibility_rect) will be full of particles when loading the scene.
 
 |Name|Type|Default|
 |:-|:-|:-|
