@@ -19,7 +19,7 @@ export (float) var min_velocity = 10.0 setget _set_min_velocity
 export (float) var max_velocity = 50.0 setget _set_max_velocity
 ## The amount of time (in seconds) until the next cycle of particles is emitted.
 export (float) var timer_wait_time = 5.0 setget _set_timer_wait_time
-## If `true`, @link_var {visibility_rect} will be full of particles when loading the scene.
+## If `true`, @link_name {visibility_rect} will be full of particles when loading the scene.
 export (bool) var preprocess = false
 
 var colors_weights = []
