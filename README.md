@@ -159,8 +159,8 @@ Thank you very much!
 ## 📝 Licenses
 
 - Source code: [MIT License](/LICENSE).
-- Documentation ([GDScriptify](https://github.com/hiulit/gdscriptify)): [MIT License](/LICENSE_GDSCRIPTIFY.txt).
+- Documentation ([GDScriptify](https://github.com/hiulit/GDScriptify)): [MIT License](/LICENSE_GDSCRIPTIFY.txt).
 
 ---
 
-Powered by [GDScriptify](https://github.com/hiulit/gdscriptify).
+Powered by [GDScriptify](https://github.com/hiulit/GDScriptify).
